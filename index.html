@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta
+      name="description"
+      content="Мой вишлист — вещи, которым я буду рад. Выберите подарок и удобный магазин."
+    />
+    <title>Мой вишлист — личный список хотелок</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <script src="./theme.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a class="brand" href="./" aria-label="Вишлист — на главную"
+        ><span class="brand-icon" aria-hidden="true">✳</span> wish list<span
+          class="brand-dot"
+          >.</span
+        ></a
+      >
+      <div class="header-actions">
+        <a class="header-link" href="#wishlist"
+          >К желаниям <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Включить тёмную тему"
+          aria-pressed="false"
+        >
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.5 13.2A8.5 8.5 0 0 1 10.8 3.5a8.5 8.5 0 1 0 9.7 9.7Z"
+            />
+          </svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> МАЛЕНЬКАЯ КОЛЛЕКЦИЯ ХОТЕЛОК</p>
+          <h1 id="page-title">
+            Хорошие вещи.<br />Большие
+            <span
+              >радости.<svg
+                viewBox="0 0 420 20"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path d="M4 14 Q180 -4 414 10 M30 19 Q230 5 390 17" /></svg
+            ></span>
+          </h1>
+          <p class="hero-description" id="intro">
+            Собрал здесь то, чему буду рад. Если хочется сделать подарок — пусть
+            выбрать его будет немного проще.
+          </p>
+          <a class="primary-link" href="#wishlist"
+            >Посмотреть вишлист <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="spark spark-one">✳</span
+          ><span class="spark spark-two">✦</span>
+          <div class="note">
+            <span class="tape"></span
+            ><span class="note-label">A LITTLE REMINDER</span>
+            <div class="note-mark">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 7h10c2 0 3 1.5 3.5 3.5l1 5c.5 2.5-2 4-3.5 2.5l-3-3H9l-3 3c-1.5 1.5-4 0-3.5-2.5l1-5C4 8.5 5 7 7 7Z"
+                />
+                <path d="M8 10v4m-2-2h4" />
+                <circle
+                  cx="16"
+                  cy="11"
+                  r=".6"
+                  fill="currentColor"
+                  stroke="none"
+                />
+                <circle
+                  cx="18"
+                  cy="13"
+                  r=".6"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </div>
+            <p>Лучший подарок —<br />это внимание.</p>
+            <span class="note-sign">А здесь — пара подсказок :)</span>
+          </div>
+          <span class="art-caption">чтобы выбрать подарок было проще</span>
+        </div>
+      </section>
+      <section class="wishlist" id="wishlist" aria-labelledby="list-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ДЛЯ ВДОХНОВЕНИЯ И НЕ ТОЛЬКО</p>
+            <h2 id="list-title">
+              Мои желания <span class="count" id="total-count">0</span>
+            </h2>
+          </div>
+          <p class="section-note">Всё, чему я буду рад.</p>
+        </div>
+        <div class="toolbar">
+          <div
+            class="filters"
+            id="filters"
+            role="group"
+            aria-label="Категории"
+          ></div>
+          <label class="search"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 4 4" /></svg
+            ><span class="sr-only">Поиск по желаниям</span
+            ><input
+              id="search"
+              type="search"
+              placeholder="Найти желание…"
+              autocomplete="off"
+          /></label>
+        </div>
+        <p
+          class="results sr-only"
+          id="results"
+          role="status"
+          aria-live="polite"
+        ></p>
+        <div class="cards" id="cards" aria-busy="true">
+          <p class="loading">Собираем желания…</p>
+        </div>
+        <div class="empty" id="empty" hidden>
+          <span aria-hidden="true">✧</span>
+          <h3>Пока ничего не нашлось</h3>
+          <p>Попробуйте другое название или категорию.</p>
+          <button type="button" id="reset">Показать все желания</button>
+        </div>
+        <noscript
+          ><p>
+            Для отображения карточек включите JavaScript в браузере.
+          </p></noscript
+        >
+      </section>
+      <aside class="closing">
+        <svg class="closing-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 11h16v10H4zM3 7h18v4H3zM12 7v14" />
+          <path
+            d="M12 7H8a2.5 2.5 0 1 1 2.5-2.5L12 7Zm0 0h4a2.5 2.5 0 1 0-2.5-2.5L12 7Z"
+          />
+        </svg>
+        <div>
+          <h2>Главное — не подарок</h2>
+          <p>А люди, с которыми разделяешь радость. Спасибо, что заглянули.</p>
+        </div>
+        <svg class="closing-decoration" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m12 20-8-8a5 5 0 0 1 8-6 5 5 0 0 1 8 6Z" />
+        </svg>
+      </aside>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="brand" href="./">wish list<span class="brand-dot">.</span></a>
+      <p>Место для маленьких больших желаний</p>
+      <a href="#page-title">Наверх ↑</a>
+    </footer>
+  </body>
+</html>

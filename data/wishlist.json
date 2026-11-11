@@ -1,0 +1,169 @@
+{
+  "intro": "Собрал здесь то, чему буду рад. Если хочется сделать подарок — пусть выбрать его будет немного проще.",
+  "items": [
+    {
+      "id": "zelda-ocarina-of-time",
+      "title": "The Legend of Zelda: Ocarina of Time",
+      "category": "Игры",
+      "image": "./assets/zelda-ocarina-of-time.webp",
+      "shops": [
+        {
+          "name": "Avito",
+          "url": "https://www.avito.ru/moskva/igry_pristavki_i_programmy/novaya_the_legend_of_zelda_ocarina_of_time_dlya_ns2_8606863536"
+        },
+        {
+          "name": "Avito",
+          "url": "https://www.avito.ru/moskva/igry_pristavki_i_programmy/the_legend_of_zelda_ocarina_of_time_ns2_v_nalichii_8359987366"
+        }
+      ]
+    },
+    {
+      "id": "samsung-microsd-express",
+      "title": "Samsung microSD Express",
+      "category": "Техника",
+      "image": "./assets/samsung-microsd-express.jpg",
+      "shops": [
+        {
+          "name": "Ozon",
+          "url": "https://ozon.ru/t/tPLjGaT"
+        }
+      ]
+    },
+    {
+      "id": "apple-airpods-5",
+      "title": "Apple AirPods 5 with Wireless Charging Case",
+      "category": "Техника",
+      "image": "./assets/airpods-5.jpg",
+      "shops": [
+        {
+          "name": "Ozon",
+          "url": "https://ozon.ru/t/dwrGP05"
+        }
+      ]
+    },
+    {
+      "id": "lego-technic-42232",
+      "title": "LEGO Technic 42232 Koenigsegg Sadair's Spear Megacar",
+      "category": "LEGO",
+      "image": "./assets/lego-42232.png",
+      "shops": [
+        {
+          "name": "Ozon",
+          "url": "https://ozon.ru/t/3QPiRhA"
+        },
+        {
+          "name": "Яндекс Маркет",
+          "url": "https://market.yandex.ru/cc/BXJ5EX"
+        },
+        {
+          "name": "Мир Кубиков",
+          "url": "https://mir-kubikov.ru/catalog/42232/"
+        }
+      ]
+    },
+    {
+      "id": "lego-star-wars-75442",
+      "title": "LEGO Star Wars™ 75442 Звездный истребитель N-1 Мандалорца",
+      "category": "LEGO",
+      "image": "./assets/lego-75442.png",
+      "shops": [
+        {
+          "name": "Ozon",
+          "url": "https://ozon.ru/t/l1RfJqT"
+        }
+      ]
+    },
+    {
+      "id": "stellar-blade",
+      "title": "Stellar Blade",
+      "category": "Игры",
+      "image": "./assets/stellar-blade.jpg",
+      "shops": [
+        {
+          "name": "GameStore",
+          "url": "https://gamestore.ru/store/playstation_5/igry-dlya-playstation-5/stellar-blade-russkie-subtitry-ps5-ECJS00034-PPSA13197/"
+        }
+      ]
+    },
+    {
+      "id": "coffee-leveler-53mm",
+      "title": "Разравниватель для кофе 53 мм черный",
+      "category": "Для кофе",
+      "image": "./assets/coffee-leveler-53mm.png",
+      "shops": [
+        {
+          "name": "Яндекс Маркет",
+          "url": "https://market.yandex.ru/cc/BXHpxK"
+        }
+      ]
+    },
+    {
+      "id": "ayn-odin-3-16-512",
+      "title": "AYN Odin 3 16/512",
+      "category": "Техника",
+      "image": "./assets/ayn-odin-3.png",
+      "shops": [
+        {
+          "name": "Ozon",
+          "url": "https://ozon.ru/t/3QPXAnd"
+        }
+      ]
+    },
+    {
+      "id": "kosmos-bani-certificate",
+      "title": "Подарочный сертификат в Космос Бани",
+      "category": "Впечатления",
+      "image": "./assets/kosmos-bani-certificate.png",
+      "shops": [
+        {
+          "name": "Космос Бани",
+          "url": "https://kosmosbaniekb.ru/sertifikaty/"
+        }
+      ]
+    },
+    {
+      "id": "oral-b-io-ultimate-clean-black",
+      "title": "Oral-B iO Ultimate Clean Black",
+      "category": "Уход за собой",
+      "image": "./assets/oral-b-io-ultimate-clean-black.png",
+      "shops": [
+        {
+          "name": "Ozon",
+          "url": "https://ozon.ru/t/D48NWXh"
+        }
+      ]
+    },
+    {
+      "id": "lego-technic-42202",
+      "title": "LEGO Technic 42202 Мотоцикл Ducati Panigale V4 S",
+      "category": "LEGO",
+      "image": "./assets/lego-42202.png",
+      "shops": [
+        {
+          "name": "Яндекс Маркет",
+          "url": "https://market.yandex.ru/cc/BXdtbj"
+        },
+        {
+          "name": "Ozon",
+          "url": "https://ozon.ru/t/6legpKA"
+        }
+      ]
+    },
+    {
+      "id": "coffee-beans",
+      "title": "Кофе в зёрнах",
+      "category": "Для кофе",
+      "image": "./assets/coffee-beans.png",
+      "shops": [
+        {
+          "name": "The Welder Catherine",
+          "url": "https://theweldercatherine.ru/catalog/dlya_espresso/"
+        },
+        {
+          "name": "Tasty Coffee",
+          "url": "https://shop.tastycoffee.ru/coffee?methods=1b"
+        }
+      ]
+    }
+  ]
+}
